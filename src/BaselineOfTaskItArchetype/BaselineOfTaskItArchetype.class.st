@@ -10,8 +10,6 @@ BaselineOfTaskItArchetype >> baseline: spec [
 	spec
 		for: #common
 		do: [ spec
-				baseline: 'ParametrizedTests'
-					with: [ spec repository: 'github://tesonep/ParametrizedTests' ];
 				baseline: 'Equals'
 					with: [ spec repository: 'github://bouraqadi/PharoMisc' ];
 				baseline: #TaskItShell
@@ -21,7 +19,7 @@ BaselineOfTaskItArchetype >> baseline: spec [
 				package: 'TaskItArchetype-Tests'
 					with: [ spec requires: #(TaskItArchetype) ];
 				package: #TaskItArchetype
-					with: [ spec requires: #(TaskIt TaskItShell Equals ParametrizedTests) ].
+					with: [ spec requires: #(TaskIt TaskItShell Equals) ].
 			spec
 				group: 'minimal'
 				with: #(#TaskItArchetype 'TaskItArchetype-Tests') ]
