@@ -29,7 +29,7 @@ TKTProject class >> forkit [
 	^ TKTProject new
 		name: #ForkIt;
 		kind: #BaselineOf;
-		repository: 'github://pharo-contributions/taskit-fork';
+		repository: 'github://pharo-contributions/taskit-fork/src';
 		yourself
 ]
 
